@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Форма заявки на предоставление услуг компании topagency">
+    <meta name="keywords" content="topagency request форма отправки заявка услуги задачи заявка">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Форма отправки заявки на услуги Topagency.</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+
+        <!--MAIN REQUEST
+        ======================-->
+        <section class="main-request">
+            <div class="header__wrapper">
+                <div class="container__page">
+
+                <!-- HEADER
+                ==================-->
+                    <div class="header">
+                        <div class="header__logo">
+                            <a class="header__link" href="index.html">
+                                <picture>
+                                    <source class="logo" srcset="img/logo_mob.svg" media="(max-width:768px)">
+                                    <img class="logo" src="img/logo.svg" alt="Перейти на главную страницу">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="main__contacts">
+                            <a class="main__contacts-btn-link" href="contacts.html">
+                                <div class="main__contacts-btn">
+                                    <span>Наши контакты</span>
+                                    <img class="eyes-icon" src="img/eyes.png" alt="">
+                                    <img class="phone-icon" src="img/contacts_title.png" alt="">
+                                </div>
+                            </a>
+                            <a class="main__contacts-link" href="https://www.instagram.com/topagency_bishkek/" target="_blank">
+                                <svg class="main__contacts-icon lnsta-link">
+                                    <use xlink:href="img/ic_instagramm.svg#insta"></use>
+                                </svg>
+                            </a>
+                            <a class="main__contacts-link" href="https://wa.me/+996550091914" target="_blank">
+                                <svg class="main__contacts-icon phone-icon">
+                                    <use xlink:href="img/ic_phone.svg#phone"></use>
+                                </svg>
+                            </a>
+                            <a class="main__contacts-link" href="https://www.youtube.com/@topagency1083" target="_blank">
+                                <svg class="main__contacts-icon youtube-icon">
+                                    <use xlink:href="img/ic_youtube.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </div> <!--main__contacts-->
+                        <div class="burger__btn" id="burger-btn">
+                            <span class="burger__line btn__line1" id="btn__line1"></span>
+                            <span class="burger__line btn__line2" id="btn__line2"></span>
+                            <span class="burger__line btn__line3" id="btn__line3"></span>
+                        </div>
+                    </div> <!--header-->
+                </div> <!--container__page-->
+            </div> <!--header__wrapper-->
+
+            <div class="container__page">
+
+                <!-- BURGER NAV 
+                ==================-->
+                <div class="nav" id="nav">
+                    <div class="nav__burger">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="smm.html">SMM</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="design.html">Design</a>
+                            </li>
+                            <li class="nav__item">
+                            <a class="nav__link" href="media.html">Media Ads</a>
+                            </li>
+                            <li class="nav__item">
+                            <a class="nav__link" href="video.html">Video Production</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="digital.html">Digital</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="bloggers.html">Bloggers</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About us</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+                        <div class="contacts-nav">
+                            <a class="contacts-nav__btn" href="tel:+996550091914">Позвони нам   
+                                <img class="contacts-nav__phone" src="img/contacts_title.png" alt="">
+                            </a>
+                            <a class="contacts-nav__link" href="https://www.instagram.com/topagency_bishkek/" target="_blank">
+                                <svg class="contacts-nav__icon">
+                                    <use xlink:href="img/ic_instagramm.svg#insta"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-nav__link" href="https://wa.me/+996550091914" target="_blank">
+                                <svg class="contacts-nav__icon nav-icon__phone">
+                                    <use xlink:href="img/ic_phone.svg#phone"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-nav__link" href="https://www.youtube.com/@topagency1083" target="_blank">
+                                <svg class="contacts-nav__icon nav-icon__youtube">
+                                    <use xlink:href="img/ic_youtube.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </div> <!--contacts-nav-->
+                    </div> <!--nav__burger-->
+                </div> <!--nav-->
+
+                <!--REQUEST INFO
+                ===================-->
+                <div class="request-info">
+                    <h1 class="request__title">Форма <span class="break"> заявки<img  class="request__title-icon" src="img/hend_title.png" alt=""></span>
+                    </h1>
+                    <div class="form">
+                        <form class="form__body" id="request__form" action="" method="POST">
+                            <div class="form__data">
+                                <p class="data__title">Заполните ваши данные</p>
+                                <div class="data__items">
+                                    <div class="data__item">
+                                        <div class="input__wrapper">
+                                            <input class="input data__input fio field-red" type="text" placeholder="ФИО" name="name" id="name">
+                                            <div class="not-filled" id="name-notfil">Укажите ваше ФИО</div>
+                                            <label class="label" for="name-notfil">ФИО</label>
+                                        </div>
+                                    </div>
+                                    <div class="data__item data__item-right">
+                                        <div class="input__wrapper">
+                                            <input class="input data__input email field-red" type="email" placeholder="Email" name="email" id="email">
+                                            <div class="not-filled" id="email-notfil">Укажите ваш Email</div>
+                                            <label class="label" for="email-notfil">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="input__wrapper">
+                                            <input class="input data__input company field-red" type="text" placeholder="Название компании" name="company" id="company">
+                                            <div class="not-filled" id="company-notfil">Укажите название вашей компании</div>
+                                            <label class="label" for="company-notfil">Название компании</label>
+                                        </div>
+                                    </div>
+                                    <div class="data__item data__item-right">
+                                        <div class="input__wrapper">
+                                            <input class="input data__input tel field-red" type="tel" placeholder="Ваш телефон" name="tel" id="tel">
+                                            <div class="not-filled" id="tel-notfil" >Укажите ваш номер телефона</div>
+                                            <label class="label" for="tel-notfil">Ваш телефон</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--form__data-->
+                            <div class="form__task">
+                                <p class="data__title">Какую задачу нам необходимо решить?</p>
+                                <div class="task__item">
+                                    <textarea class="input task__input field-red" placeholder="Уважаемый клиент, мы просим Вас максимально подробно описать задачу, которую Вы ставите перед нашим агенством. Какую проблему хотите решить с нашей помощью?" name="message" id="message"></textarea>
+                                    <div class="not-filled" id="message-notfil" >Укажите какую задачу необходимо решить</div>
+                                </div>
+                            </div> <!--form__task-->
+                            <div class="form__footer">
+                                <input class="form__btn" type="submit" id="form__btn">
+                            </div>
+                        </form>
+                    </div>
+                </div><!--request-info-->
+
+                <!--MODALS 
+                ==================-->
+                <div class="modal" id="modal_send">
+                    <div class="modal__dialog" id="modal_dialog">
+                        <p class="modal__title"></p>
+                        <p class="modal__text"></p>
+                        <div class="modal__button" data-close>
+                            <span class="btn__line btn__line-1"></span>
+                            <span class="btn__line btn__line-2"></span>
+                        </div> 
+                    </div> <!--modal__dialog-->
+                    <div class="load" id="load"></div>   
+                </div> <!--modal-->
+                <div style='display:none' id='modal_title_ok'>Уважаемый пользователь 
+                    <img  class="modal__dialog-icon" src="img/title_icon/bloggers_title.png" alt="">
+                </div>
+                <div style='display:none' id='modal_text_ok'>Ваша заявка успешно отправлена!<br> Мы рассмотрим ее в течение 2 дней, а так же мы будем рады помочь Вам с решением вашей задачи! <br> Спасибо за доверие к нам!</div>
+                <div style='display:none' id='modal_title_error'>Ошибка!</div>
+                <div style='display:none' id='modal_text_error'>Что-то пошло не так на сервере: </div>
+            </div><!--container__page-->
+        </section>
+
+     <!-- SCRIPT 
+     ======================-->
+     <script src="js/app.js"></script>
+     <script src="js/request.js"></script>
+  
+    </div> <!--wrapper-->
+</body>
+</html>
