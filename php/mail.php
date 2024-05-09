@@ -18,7 +18,7 @@ $mail->isHTML(true);
 //$mail-> isSMTP();
 
 $mail->setFrom('muzkat@mail.com', 'Заявка с сайта'); // от кого будет уходить письмо?
-$mail->addAddress('topagency.ads@gmail.com');     // Кому будет уходить письмо 
+$mail->addAddress('gf.muzkat@gmail.com');     // Кому будет уходить письмо 
 $mail->Subject = 'Новая заявка для Topagency';
 
 $name = $_POST['name'];
