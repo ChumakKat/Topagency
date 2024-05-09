@@ -1,0 +1,91 @@
+/*BLOG*/
+
+.blog__itemtop{
+    margin-bottom: 50px;
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 0;
+    }
+}
+
+.blog__iconbox {
+    height: 170px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog__icon {
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+   
+    @include breakpoint ($mobile-bp-380) {
+        max-width: 250px;
+    }
+}
+
+/*BLOG PAGE img*/
+.blog__iconbox-page {
+    height: 370px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+
+    @include breakpoint ($desktop-bp-992) {
+        height: 300px;
+    }
+    @include breakpoint ($tablets-bp-768) {
+        height: 270px;
+    }
+    @include breakpoint ($mobile-bp-576) {
+        height: 240px;
+    }
+}
+
+.blog__icon-page {
+    width: 100%;
+    max-width: 700px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*BLOG PAGE*/
+
+.blop__page-title {
+    text-transform: uppercase;
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight:900;
+    font-size: 30px;
+    margin-bottom: 20px;
+   
+
+    @include breakpoint ($desktop-bp-1280) {
+       font-size: 22px;
+     }
+     
+     @include breakpoint ($desktop-bp-992) {
+        font-size: 20px;
+      } 
+     @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 12px;
+      } 
+     @include breakpoint ($mobile-bp-576) {
+        font-size: 18px;
+      } 
+}
+
+.blog__page-text {
+    white-space: pre-line
+    ;
+}

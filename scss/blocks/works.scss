@@ -1,0 +1,42 @@
+/* WORKS */
+
+.main-works {
+    padding-bottom: 65px;
+
+    @include breakpoint ($desktop-bp-992) {
+        padding-bottom: 55px;
+     }
+    @include breakpoint ($tablets-bp-768) {
+        padding-bottom: 30px;
+     }
+    @include breakpoint ($mobile-bp-576) {
+        padding-bottom: 0;
+     }
+}
+
+.works-info__title {
+    margin-bottom: 80px ;
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 45px ;
+     } 
+
+    @include breakpoint ($mobile-bp-380) {
+        max-width: 230px;
+       margin-left: auto;
+       margin-right: auto;
+     } 
+}
+
+.works-slider {
+    & .slick-dots {
+       bottom: 85px;
+ 
+       @include breakpoint ($tablets-bp-768) {
+          bottom:105px;
+       }
+       @include breakpoint ($mobile-bp-576) {
+          bottom:125px;
+       }
+    }
+ }

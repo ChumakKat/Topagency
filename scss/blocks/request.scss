@@ -1,0 +1,369 @@
+/* REQUEST */
+
+.main-request {
+    padding: 0 0 33px;
+
+    @include breakpoint ($tablets-bp-768) {
+        padding: 0 0 50px;
+     } 
+}
+
+.request-info {
+    @include breakpoint ($tablets-bp-768) {
+        margin-top: 40px;
+     } 
+}
+
+.request__title-icon {
+    width: 70px;
+
+    @include breakpoint ($desktop-bp-992) {
+        width: 60px;
+     } 
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 45px;
+       
+     } 
+
+    @include breakpoint ($mobile-bp-576) {
+        width: 38px; 
+     } 
+}
+
+.request__title {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 50px;
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 60px;
+     } 
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 45px;
+        text-align: center;
+     } 
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 38px; 
+        max-width: 200px;
+        margin: 0 auto 50px;
+     } 
+}
+
+.data__title {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 20px;
+
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+        font-size: 18px;
+     } 
+}
+
+.form {
+    width: 100%;
+    max-width: 995px;
+}
+
+.data__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    margin-bottom: 30px;
+   
+    @include breakpoint ($tablets-bp-768) {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-bottom: 50px;
+     } 
+}
+
+.input__wrapper {
+    position: relative;
+    max-width: 454px;
+    margin: 0 auto;
+}
+
+.data__item-right {
+    margin-left: 42px;
+  
+    @include breakpoint ($tablets-bp-768) {
+        margin-left: 0;
+        order: 1;
+     } 
+}
+
+.input {
+    background-color: $input;
+    padding: 0 16px;
+    outline: none;
+    border: 1px solid $input;
+
+    font-family: 'AvenirNextCyr-Medium', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: $colortext;
+
+    &:focus {
+        border: 1px solid $black;
+        padding-top: 7px;
+        & ~ .label {
+            display: block;
+        }
+    }
+
+    &::placeholder {
+        color: $placeholder;
+        font-family: 'AvenirNextCyr-Medium', Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px $input!important;
+   box-shadow: inset 0 0 0 50px $input!important;
+}
+
+.input__red {
+    border: 1px solid $redtext;
+  }
+
+.data__input {
+    width: 100%;
+    max-width: 454px;
+    height: 50px;
+    border-radius: 50px; 
+}
+
+.not-filled {
+   opacity: 0;
+    font-family: inherit;
+    font-size: 10px;
+    color: $redtext;
+    margin: 10px 0 0 16px;
+
+    &.active {
+        opacity: 1;
+    } 
+}
+
+.label {
+    display: none;
+    font-family: inherit;
+    font-size: 10px;
+    color: $colortext;
+
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index: 100;
+}
+
+.task__item {
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+     } 
+}
+
+.task__input {
+    width: 100%;
+    min-height: 130px;
+    border-radius: 20px;
+    padding: 16px;
+
+    &:focus {
+        padding: 16px;
+    }
+    
+    @include breakpoint ($tablets-bp-768) {
+        max-width: 454px; 
+        min-height: 230px;
+     } 
+}
+
+.form__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    @include breakpoint ($tablets-bp-768) {
+        flex-direction: column;
+        margin-top: 30px;
+     } 
+}
+
+.form__btn {
+    width: 233px;
+    height: 44px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: $input;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: $coloragency;
+    margin-right: 50px;
+    cursor: pointer;
+
+    transition: all .3s linear;
+
+    &:hover {
+        color: $white;
+        background-color: $black;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-right: 0;
+     } 
+}
+
+/* MODAL */
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+    background-color: rgba($black, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    &.show {
+        display: flex;
+      }
+  }
+
+  .load {
+    display: none;
+    width: 312px;
+    height: 318px;
+    background: url('../img/Load.gif') center / 50px no-repeat;
+    position: relative;
+    margin: auto;
+
+    &.show {
+        display: flex;
+      }
+  }
+
+  .modal__dialog {
+    display: none;
+    width: 100%;
+    max-width: 537px;
+    margin: auto;
+    background-color: $background;
+    padding: 90px 50px;
+    border-radius: 10px;
+    text-align: center;
+
+    position: relative;
+
+    &.show {
+        display: block;
+      }
+
+    @include breakpoint ($tablets-bp-768) {
+        max-width: 450px;
+        padding: 65px 40px 55px;
+    } 
+
+    @include breakpoint ($mobile-bp-576) {
+        padding: 55px 27px 45px;
+    } 
+  }
+
+  .modal__title {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1;
+    color: $colortext;
+    margin-bottom: 40px;
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 20px;
+        margin-bottom: 30px;
+    } 
+
+    @include breakpoint ($mobile-bp-576) {
+       font-size: 18px;
+       padding: 0 35px;
+       margin-bottom: 20px;
+    } 
+}
+
+  .modal__dialog-icon {
+    width: 30px;
+    position: relative;
+    bottom: -2px;
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 20px;
+    } 
+  }
+
+  .modal__text {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $colortext;
+    margin: 0 auto;
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 14px;
+    } 
+
+    @include breakpoint ($mobile-bp-576) {
+        line-height: 1.5;
+    } 
+  }
+
+  .modal__button {
+   width: 30px;
+   height: 30px;
+    
+   position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 3000;
+
+    transition: all .3s linear;
+
+    &:active .btn__line{
+        background-color: $buttonactive;
+    }
+  }
+
+  .btn__line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: $black;
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+
+  .btn__line-1 {
+    transform: rotate(45deg);
+  }
+
+  .btn__line-2 {
+    transform: rotate(-45deg);
+  }

@@ -1,0 +1,609 @@
+/* CASE - link back */
+
+.case-info {
+    @include breakpoint ($mobile-bp-576) {
+       margin-top: 30px;
+     }
+}
+.case-info__back-link {
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 50px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 25px;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        font-size: 20px;
+        margin-bottom: 40px;
+     }
+
+     @include breakpoint ($mobile-bp-576) {
+        font-size: 16px;
+        margin-bottom: 30px;
+     }
+}
+
+.case-info__back-icon {
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+
+    @include breakpoint ($desktop-bp-992) {
+        width: 25px;
+        top: 2px;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        width: 20px;
+     }
+}
+
+/* CASE info */
+
+.case-info__content {
+padding-bottom: 50px;
+
+    @include breakpoint ($desktop-bp-992) {
+       font-size: 18px;
+       padding-bottom: 40px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+        padding-bottom: 30px;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+       font-size: 15px;
+    }
+
+    &-rihatt {
+        width: 65%;
+        padding-bottom: 0;
+    
+        @include breakpoint ($tablets-bp-768) {
+            width: 100%;
+            margin-bottom: 30px;
+         }
+    }
+
+    &-video {
+        padding-bottom: 0;
+    }
+}
+
+.case-info__items {
+    display: flex;
+    margin-bottom: 40px;
+
+    &-rihatt {
+        flex-direction: column; 
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        flex-direction: column; 
+     }
+
+     &-idea {
+        @include breakpoint ($tablets-bp-768) {
+            margin-bottom: 0; 
+         }
+     }
+}
+
+.case-info__item-left {
+    width: 60%;
+    padding-right: 40px;
+
+    &-rihatt {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+   
+    @include breakpoint ($tablets-bp-768) {
+        width: 100%;
+        padding-right: 0;
+        margin: 0 auto 15px;
+     }
+}
+
+.case-info__subtitle {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    margin-bottom: 12px;
+} 
+
+.case-info__icon {
+    width: 20px;
+
+    @include breakpoint ($desktop-bp-992) {
+        width: 18px;
+      }
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 15px;
+      }
+}
+
+.case-info__list-tasks {
+    margin: 0;
+  
+    & li {
+        margin-bottom: 8px;
+        
+        &::before {
+            content: "";
+            display: inline-block;
+            background-color: $colortext;
+            width: 5px;
+            height: 5px;
+            border-radius: 10px;
+            position: relative;
+            top: -3px;
+            left: -10px;
+        }
+     
+        @include breakpoint ($tablets-bp-768) {
+            max-width: 100%;
+            margin: 0 auto 8px;
+          }
+    }
+
+    &-performed {
+        list-style:none;
+        padding: 0;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        padding: 0 15px 15px;
+      }
+}
+
+.case-info__list-performed {
+    padding: 0; 
+
+    & li {
+        margin-bottom: 8px;
+    }
+}
+
+.page-info__performed-rihatt {
+    padding-right: 40px;
+
+    @include breakpoint ($tablets-bp-768) {
+        padding-right: 0;
+       }
+}
+
+/* CASE view */
+
+.case-view {
+    background-color: $white;
+    padding: 40px 0 95px;
+
+    @include breakpoint ($tablets-bp-768) {
+       padding: 35px 0 75px;
+      }
+
+    @include breakpoint ($mobile-bp-576) {
+        padding: 35px 0 60px;
+      }
+
+    @include breakpoint ($mobile-bp-480) {
+        padding: 35px 0;
+      }
+    
+    &-tiktok {
+        padding: 40px 0;
+
+        @include breakpoint ($tablets-bp-768) {
+            padding: 35px;
+           }
+    }
+
+    &-rihatt {
+        background-color: $background;
+        padding: 0; 
+        width: 35%;
+
+        @include breakpoint ($tablets-bp-768) {
+            background-color: $white;
+            width: 100vw;
+           }
+
+           @include breakpoint ($tablets-bp-768) {
+            padding: 35px 0;
+           }  
+    }
+}
+
+.case-view__items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include breakpoint ($mobile-bp-480) {
+       flex-direction: column;
+       align-items: center;
+      }   
+}
+
+.case-view__item {
+    text-align: center;
+
+    &:first-child {
+        margin-right: 110px;
+
+        @include breakpoint ($tablets-bp-768) {
+            margin-right: 70px;
+          }
+
+          @include breakpoint ($mobile-bp-576) {
+            margin-right: 50px;
+          }
+
+          @include breakpoint ($mobile-bp-480) {
+            margin-right: 0;
+        }
+    }
+
+    &-rihatt {
+        &:first-child {
+            margin-right: 0;
+        }
+
+        @include breakpoint ($tablets-bp-768) {
+            display: flex;
+            align-items: center;
+          }
+    }
+
+    @include breakpoint ($mobile-bp-480) {
+        display: flex;
+        align-items: center;
+    }
+
+    &-tiktok {
+        @include breakpoint ($mobile-bp-480) {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.case-view__img {
+    width: 230px;
+
+    &-rihatt {
+        width: 200px;
+
+        @include breakpoint ($tablets-bp-768) {
+            margin-right: 25px;
+          }
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 180px;
+      }
+
+    @include breakpoint ($mobile-bp-576) {
+        width: 140px;
+      }
+
+      @include breakpoint ($mobile-bp-480) {
+        margin-right: 25px;
+       }
+
+    &-do {
+        width: 200px;
+
+        @include breakpoint ($tablets-bp-768) {
+            width: 155px;
+          }
+    
+        @include breakpoint ($mobile-bp-576) {
+            width: 120px;
+          }
+    
+          @include breakpoint ($mobile-bp-480) {
+            margin-right: 35px;
+            margin-left: 25px;
+           }
+    }
+}
+
+.case-view__info-do {
+      @include breakpoint ($mobile-bp-480) {
+            margin-right: 15px;
+           }
+}
+
+.case-view__number {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 28px;
+      }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 20px;
+      }
+}
+
+.case-view__item-date {
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+   
+    @include breakpoint ($mobile-bp-576) {
+        margin: 0 7px;
+        top: -20px;
+      }
+
+      @include breakpoint ($mobile-bp-480) {
+        display: flex;
+        align-items: center;
+        top: 0;
+        padding: 25px 0;
+        margin: 0;
+        padding-right: 50px;
+       }
+}
+
+.case-view__img-date {
+    width: 240px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    z-index: 1;
+   
+    @include breakpoint ($tablets-bp-768) {
+        width: 150px;
+        top: 50px;
+        left: -120px;
+      }
+
+    @include breakpoint ($mobile-bp-576) {
+        width: 115px;
+        top: 35px;
+        left: -90px;
+      }
+
+      @include breakpoint ($mobile-bp-480) {
+        width: 50px;
+        top: 22px;
+        left: -55px;
+        transform: rotate(90deg);
+       } 
+}
+
+.case-view__text {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.4;
+
+    @include breakpoint ($tablets-bp-768) {
+       font-size: 13px;
+      }
+
+    @include breakpoint ($mobile-bp-576) {
+       font-size: 10px;
+      }
+  
+    &-date {
+        color: $redtext;
+        position: absolute;
+        top: 40px;
+        left: -115px;
+        z-index: 1;
+        white-space: nowrap;
+
+        @include breakpoint ($tablets-bp-768) {
+            top: 40px;
+            left: -90px;
+           }
+     
+         @include breakpoint ($mobile-bp-576) {
+            top: 28px;
+            left: -70px;
+           }
+
+           @include breakpoint ($mobile-bp-480) {
+            top: 20px;
+            left: -20px;
+           } 
+    }
+}
+
+/* CASE SLIDER */
+
+.case-slider-block {
+    &:hover {
+        cursor:url('../img/drag.png'), grab;
+    } 
+    &-rihatt {
+        background-color: $white;
+
+        @include breakpoint ($tablets-bp-768) {
+            background-color: $background;
+         }
+    }
+
+    padding: 60px 0;
+
+    &.slider-block-social{
+        padding: 60px 0 80px;
+
+        @include breakpoint ($desktop-bp-992) {
+            padding: 50px 0 70px;
+         }
+
+         @include breakpoint ($tablets-bp-768) {
+            padding: 45px 0 60px;
+         }
+
+         @include breakpoint ($mobile-bp-576) {
+            padding: 40px 0 60px;
+         }
+    
+        &:hover {
+            cursor: pointer;
+        } 
+    }
+    
+    @include breakpoint ($desktop-bp-992) {
+        padding: 50px 0;
+
+        &:hover {
+            cursor: grab;
+        } 
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        padding: 45px 0;
+     }
+
+     @include breakpoint ($mobile-bp-576) {
+        padding: 40px 0;
+     }
+}
+
+.case-slider-item {
+    width: 400px;
+    margin-right: 70px;
+    outline: none;
+   
+    @include breakpoint ($desktop-bp-992) {
+        width: 350px;
+        margin-right: 60px;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        width: 280px;
+        text-align: center;
+        margin-right: 45px;
+     }
+
+     @include breakpoint ($mobile-bp-576) {
+        width: 240px;
+        margin-right: 40px;
+     }
+}
+
+.case-slider__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 60px;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+ 
+    @include breakpoint ($desktop-bp-992) {
+        width: 350px;
+        height: 350px;
+        border-radius: 50px;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 280px;
+        height: 280px;
+        border-radius: 40px;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+        width: 240px;
+        height: 240px;
+        border-radius: 25px;
+     }
+
+     &-blog {
+        height: 239px;
+        border-radius: 20px;
+
+        @include breakpoint ($desktop-bp-992) {
+            height: 209px;
+         }
+
+         @include breakpoint ($tablets-bp-768) {
+            height: 167px;
+         }
+
+         @include breakpoint ($mobile-bp-576) {
+            height: 143px;
+         }
+     }
+}
+
+.case-slider__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CASE riha tiktok*/
+.case-info__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    @include breakpoint ($tablets-bp-768) {
+        flex-direction: column;
+        margin-bottom: 0;
+     }
+}
+
+/* VIDEO CASE*/
+
+.video__block {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 10% auto;
+    padding: 0 0 51% 0;
+    position: relative;
+
+    @include breakpoint ($desktop-bp-1280) {
+        padding: 0 0 49% 0;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        margin: 15% auto;
+    }
+}
+
+.video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    border: 0;
+    outline: 0;
+}
+
+.page-info__bloggers {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Video-case slider IDEA bloggers*/
+.v_case-slider-block {
+    cursor: pointer;
+    padding: 10px 0 0 0;
+}

@@ -1,0 +1,142 @@
+/* Contacts */
+
+.contacts-info__subtitle {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 50px;
+    line-height: 1;
+    
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 25px 30px;
+     }
+}
+
+.contacts-info__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+   
+    @include breakpoint ($desktop-bp-992) {
+        flex-direction: column;
+        padding-bottom: 0;
+     }
+}
+
+.contacts-info__text {
+    @include breakpoint ($desktop-bp-992) {
+       align-self: start;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+       align-self: center;
+       align-items: center;
+        margin-bottom: 40px;
+     }
+}
+
+.contacts__tel-block {
+    margin-bottom: 65px;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-bottom: 40px;
+      }
+
+    @include breakpoint ($tablets-bp-768) {
+       text-align: center;
+      
+      }
+}
+
+.contacts__email {
+    margin-bottom: 35px;
+
+    @include breakpoint ($desktop-bp-992) {
+       margin-right: 85px;
+      }
+ 
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+        margin-right: 0;
+       }
+}
+
+.contacts__address {
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+       }
+}
+
+.contacts__title {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.contacts__tel {
+    margin-bottom: 15px;  
+}
+
+.contacts__link {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.contacts__icon {
+    width: 20px;
+}
+
+.contacts__item-tablet {
+    @include breakpoint ($desktop-bp-992) {
+       display: flex;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+       display: block;
+     }
+}
+
+/* contacts MAP */
+
+.contacts-info__map {
+    text-align: center;
+}
+
+.map__wrapper {
+    width: 650px;
+    height: 387px;
+    border: 1px solid $white;
+
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @include breakpoint ($desktop-bp-1200) {
+        width: 570px;
+     }
+
+    @include breakpoint ($desktop-bp-992) {
+        width:100vw;
+        border-radius: 0;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+        height: 280px;
+     }
+
+    @include breakpoint ($mobile-bp-480) {
+        height: 250px; 
+     }
+
+    @include breakpoint ($mobile-bp-375) {
+        height: 200px; 
+     }
+}

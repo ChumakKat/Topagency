@@ -1,0 +1,99 @@
+/* DIGITAL */
+
+.digital-info__title {
+    margin-bottom: 100px;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-bottom: 70px;
+        text-align: center;
+     } 
+
+     @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 40px;
+     } 
+}
+
+.digital-info__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 90px;
+    margin-bottom: 140px;
+
+    & .slick-dots {
+        position: absolute;
+        bottom: -45px;
+        left: 0;
+        z-index: 2;
+     }
+
+    @include breakpoint ($desktop-bp-1200) {
+        grid-column-gap: 70px;
+     } 
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-bottom: 100px;
+        grid-column-gap: 60px;
+
+     } 
+
+     @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 88px;
+        grid-template-columns: 1fr;
+
+        & .slick-dots {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            z-index: 2;
+         }
+     }   
+}
+
+.digital-info__item {
+    text-align: center;
+}
+
+.digital-info__icon {
+    margin: 0 auto;
+}
+
+.digital-info__subtitle {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    margin: 30px 0;
+    color: $black;
+
+     @include breakpoint ($tablets-bp-768) {
+        margin: 30px 0 22px;
+     } 
+}
+
+.digital-info__text {
+    margin-bottom: 30px;
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 18px;
+        margin: 0 30px 25px;
+     } 
+
+    @include breakpoint ($mobile-bp-576) {
+        margin: 0 15px 25px;
+        font-size: 15px;
+     } 
+}
+
+.digital-info__link {
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color .2s linear;
+
+    &:hover {
+        color: $redtext;
+    }
+
+    &:active {
+        color: $redactive;
+    }
+}

@@ -1,0 +1,94 @@
+/* BLOGGERS */
+
+.bloggers-info__content {
+    margin-bottom: 70px;
+
+    & .page-info__text {
+        margin-bottom: 35px;
+    }
+
+    & p {
+        margin-bottom: 15px;
+    }
+
+    & .case-info__content {
+        padding: 0;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 40px;
+    }
+}
+
+.bloggers-info__text {
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 65px;
+}
+
+.bloggers-info__subtitle {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 47px;
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 25px;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 20px;
+        text-align: center;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 18px;
+     }
+}
+
+/* COOPERATION */
+.cooperation__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $redtext;
+    font-weight: 900;
+    position: relative;
+    transition: all .3s linear;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $redactive;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+       font-size: 18px;
+      
+     }
+}
+
+.link__arrow {
+    margin-left: 10px;
+
+    @include breakpoint ($tablets-bp-768) {
+       width: 16px;
+       margin-left: 5px;
+       position: relative;
+       bottom: -2px;
+      } 
+}
+
+.bloggers-info__title-img {
+    width: 32px;
+
+    @include breakpoint ($desktop-bp-992) {
+        width: 25px;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        width: 18px;
+     }
+}

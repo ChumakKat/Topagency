@@ -1,0 +1,859 @@
+/* ABOUT */
+.about-clients__block {
+    text-align: center;
+    padding: 200px 0;
+    overflow: hidden;
+
+    @include breakpoint ($desktop-bp-992) {
+        padding: 150px 0 170px;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        padding: 150px 0;
+     }
+
+     @include breakpoint ($mobile-bp-576) {
+        padding: 145px 0 150px;
+     }
+}
+
+.about-clients__wrapper {
+    position: relative;
+}
+
+.about-clients__title {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+
+    & br {
+        display: none;
+    }
+
+    & span {
+        color: $redtext;
+    } 
+
+    @include breakpoint ($desktop-bp-1200) {
+        font-size: 70px;
+     }
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 60px;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 50px;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 32px;
+        margin: 0 auto;
+     
+        & br {
+            display: block;
+        }
+     }
+}
+
+/* ABOUT - CLIENTS 200+ */
+.clients__display {
+    overflow: hidden; 
+}
+
+.clients__item {
+    width: max-content;
+}
+.clients__item1 {
+    position: absolute;
+    top: -100%;
+    left: 17%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        top: -110%;
+      }
+}
+.clients__item2 {
+    position: absolute;
+    top:130%;
+    left: 10%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        top: 150%;
+      } 
+}
+.clients__item3 {
+    position: absolute;
+    top: -100%;
+    left: 55%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-660) {
+        left: 50%;
+      } 
+
+    @include breakpoint ($mobile-bp-576) {
+        left: 60%;
+        top: -65%;
+      } 
+}
+.clients__item4 {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        top: 0;
+        left: 7%;
+      } 
+}
+.clients__item5 {
+    position: absolute;
+    top: -45%;
+    left: 28%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        display: none;
+      } 
+}
+.clients__item6 {
+    position: absolute;
+    top: -40%;
+    left: 77%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+       top: -15%;
+       left: 70%;
+      } 
+}
+.clients__item7 {
+    position: absolute;
+    top:30%;
+    left: 87%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        left: 80%;
+      } 
+}
+.clients__item8 {
+    position: absolute;
+    top:-90%;
+    left: 73%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        display: none;
+      } 
+}
+.clients__item9 {
+    position: absolute;
+    top:150%;
+    left: 53%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+       top:175%;
+        left: 65%;
+      } 
+}
+.clients__item10 {
+    position: absolute;
+    top: 180%;
+    left: 70%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        top: 220%;
+        left: 55%;
+      } 
+}
+.clients__item11 {
+    position: absolute;
+    top: 175%;
+    left: 17%;
+    z-index: 1;
+
+     @include breakpoint ($mobile-bp-576) {
+        display: none;
+      } 
+}
+.clients__item12 {
+    position: absolute;
+    top: 220%;
+    left: 61%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        display: none;
+      } 
+}
+.clients__item13 {
+    position: absolute;
+    top: -90%;
+    left: 43%;
+    z-index: 1;
+    
+    @include breakpoint ($mobile-bp-660) {
+       display: none;
+     } 
+}
+.clients__item14 {
+    position: absolute;
+    top: 105%;
+    left: 45%;
+    z-index: 1;
+}
+.clients__item15 {
+    position: absolute;
+    top: -35%;
+    left: 10%;
+    z-index: 1;
+       
+    @include breakpoint ($mobile-bp-576) {
+        top: -70%;
+      } 
+}
+.clients__item16 {
+    position: absolute;
+    top: 120%;
+    left: 75%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        display: none;
+      } 
+}
+.clients__item17 {
+    position: absolute;
+    top:-150%;
+    left: 35%;
+    z-index: 1;
+}
+.clients__item18 {
+    position: absolute;
+    top:-40%;
+    left: 43%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        top:-30%;
+        left: 30%;
+      } 
+}
+.clients__item19 {
+    position: absolute;
+    top: 190%;
+    left: 46%;
+    z-index: 1;
+    
+    @include breakpoint ($mobile-bp-576) {
+        top: 194%;
+        left: 20%;
+      } 
+}
+.clients__item20 {
+    position: absolute;
+    top:-30%;
+    left: 63%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        top:-120%;
+        left: 74%;
+      } 
+}
+.clients__item21 {
+    position: absolute;
+    top:-150%;
+    left: 60%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        display: none;
+      } 
+}
+.clients__item22 {
+    position: absolute;
+    top:-150%;
+    left: 25%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-576) {
+        top: -160%;
+        left: 15%;
+      } 
+}
+.clients__item23 {
+    position: absolute;
+    top:100%;
+    left: 33%;
+    z-index: 1;
+
+    @include breakpoint ($mobile-bp-576) {
+        top: 100%;
+        left: 20%;
+      } 
+}
+.clients__item24 {
+    position: absolute;
+    top:225%;
+    left: 32%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-576) {
+        top: 235%;
+        left: 27%;
+      } 
+}
+.clients__item25 {
+    position: absolute;
+    top:110%;
+    left: 65%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-576) {
+        top: 130%;
+        left: 70%;
+      } 
+}
+.clients__item26 {
+    position: absolute;
+    top:112%;
+    left: 55%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-576) {
+        top:102%;
+        left: 65%;
+      } 
+}
+.clients__item27 {
+    position: absolute;
+    top:-65%;
+    left: 53%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-576) {
+        display: none;
+      } 
+}
+.clients__item28 {
+    position: absolute;
+    top:140%;
+    left: 35%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-660) {
+        display: none;
+       } 
+}
+.clients__item29 {
+    position: absolute;
+    top:230%;
+    left: 45%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-576) {
+       display: none;
+      } 
+}
+.clients__item30 {
+    position: absolute;
+    top:-145%;
+    left: 50%;
+    z-index: 1;
+   
+    @include breakpoint ($mobile-bp-576) {
+        top:-155%;
+        left: 70%;
+      } 
+}
+
+.clients__name {
+    font-family: 'AvenirNextCyr-Regular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: $clients;
+    text-transform: none;
+    
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 18px;
+     } 
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 16px;
+     } 
+}
+
+.clients__name1 {
+    animation: step 5s 1s linear infinite; 
+}
+.clients__name2 {
+    animation: step 7s linear infinite;
+}
+.clients__name3 {
+    animation: step 5s 1s linear infinite;
+}
+.clients__name4 {
+    animation: step 5s 1s linear infinite;
+}
+.clients__name5 {
+    animation: step 5s linear infinite;
+}
+.clients__name6 {
+    animation: step 5s 4s linear infinite;
+}
+.clients__name7 {
+    animation: step 5s linear infinite;
+}
+.clients__name8 {
+    animation: step 5s 3s linear infinite;
+}
+.clients__name9 {
+    animation: step 5s 1s linear infinite;
+}
+.clients__name10 {
+    animation: step 5s 1s linear infinite;
+}
+.clients__name11 {
+    animation: step 10s 3s linear infinite;
+}
+.clients__name12 {
+    animation: step 5s 2s linear infinite;
+}
+.clients__name13 {
+    animation: step 5s 2s linear infinite;
+}
+.clients__name14 {
+    animation: step 5s 2s linear infinite;
+}
+.clients__name15 {
+    animation: step 5s 4s linear infinite;
+}
+.clients__name16 {
+    animation: step 5s 1s linear infinite;
+}
+.clients__name17 {
+    animation: step 5s 4s linear infinite;
+}
+.clients__name18 {
+    animation: step 5s linear infinite;
+}
+.clients__name19 {
+    animation: step 5s 4s linear infinite;
+}
+.clients__name20 {
+    animation: step 5s 2s linear infinite;
+}
+.clients__name21 {
+    animation: step 5s 2s linear infinite;
+}
+.clients__name22 {
+    animation: step 3s 2s linear infinite;
+}
+.clients__name23 {
+    animation: step 3s 2s linear infinite;
+}
+.clients__name24 {
+    animation: step 4s 2s linear infinite;
+}
+.clients__name25 {
+    animation: step 3s 4s linear infinite;
+}
+.clients__name26 {
+    animation: step 5s 2s linear infinite;
+}
+.clients__name27 {
+    animation: step 7s 4s linear infinite;
+}
+.clients__name28 {
+    animation: step 4s 3s linear infinite;
+}
+.clients__name29 {
+    animation: step 5s 1s linear infinite;
+}
+.clients__name30 {
+    animation: step 3s 2s linear infinite;
+}
+
+@keyframes step {
+    0% {
+        width: 0%;
+    }
+    40% {
+        width:100%;
+    }
+    60% {
+        width:100%;
+    }
+    60.1% {
+        width:0;
+    }
+    100% {
+        width:0;
+    } 
+}
+
+// @keyframes step {
+//     0% {
+//         width: 100%;
+//     }
+//     100% {
+//         width:100%;
+//     } 
+// }
+
+/* ABOUT - TEAM */
+.team__block{
+    background-color: $white;
+}
+
+.team__header {
+    padding-top: 45px;
+    text-align: center;
+}
+
+.team__title {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 30px;
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 25px;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 20px;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 18px;
+     }
+}
+
+/* TABS */
+.tabs {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;  
+}
+
+.tabs__nav {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    overflow: auto;
+    user-select: none; 
+    cursor: grab;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    &-design {
+        justify-content: start;
+        padding-left: 100px;
+    }
+
+    @include breakpoint ($desktop-bp-1200) {
+        justify-content: start;
+        padding-left: 30px;
+     }
+
+    @include breakpoint ($desktop-bp-992) {
+        padding-left: 15px;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+        padding-left: 10px;
+     }
+}
+
+.hr__line {
+    display: block;
+    width:100%;
+    height: 1px;
+    border: none;
+    color: $line;
+    background-color: $line;
+
+    position: absolute;
+    top: 63px;
+    left: 0;
+    z-index: 1;
+}
+
+.tabs__nav-btn {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    padding: 0 50px;
+    height: 75px;
+    font-size: 20px;
+    background-color: inherit;
+    border: none;
+    position: relative;
+    outline: none;
+
+    @include breakpoint ($desktop-bp-992) {
+        padding: 0 40px;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 17px;
+        padding: 0 20px;
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 14px;
+        text-transform: uppercase;
+     }   
+}
+
+.tab__link {
+    color: $black;
+    white-space: nowrap;
+    cursor: pointer; 
+  
+    .no-wrap {
+        white-space: nowrap;
+    }
+   
+    @include breakpoint ($tablets-bp-768) {
+        white-space: normal;
+     } 
+}
+
+.line {
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: inherit;
+    border-radius: 2px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    transition: all .3s linear; 
+}
+
+.tabs__nav-btn:hover {
+    color: $redactive;
+}
+
+.tabs__nav-btn.active {
+    color: $redtext;
+
+    .line {
+         background-color: $redtext;
+         z-index: 3;
+         width: calc(100% - 50px);
+
+         @include breakpoint ($tablets-bp-768) {
+            width: calc(100% - 30px);
+         } 
+    } 
+}
+
+/* TABS CONTENT */
+
+.tabs__content {
+    padding: 65px 0 65px 0;
+    background-color: inherit;
+    
+    @include breakpoint ($desktop-bp-992) {
+        padding: 50px 0 55px 0;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        padding: 35px 0 45px 0;
+     }
+
+     @include breakpoint ($mobile-bp-576) {
+        padding: 32px 0 40px 0;
+     }
+
+     &-design {
+        padding: 0;
+     }
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: block;
+    width: 100%;
+}
+
+/* About TEAM BLOCK */
+.tab_desigher, .tab_smm {
+    & .slick-dots  {
+        position: absolute;
+        bottom: -37px;
+
+        button {
+            display: block;
+        }
+
+        @include breakpoint ($tablets-bp-768) {
+            bottom: -20px;
+          }
+    }
+
+    & .tabs__item-team {
+      
+        @include breakpoint ($tablets-bp-768) {
+            padding-bottom: 10px;
+         }
+    }
+}
+
+.tabs__designer-wrap {
+    .photo__wrapper {
+        @include breakpoint ($desktop-bp-992) {
+            margin-right: 20px;
+         }
+
+         @include breakpoint ($tablets-bp-768) {
+            margin-right: 0;
+         }
+    }
+}
+
+.tabs__item-team {
+    display: flex;
+    justify-content: space-between;
+   
+    @include breakpoint ($tablets-bp-768) {
+        flex-direction: column;
+     }
+}
+
+.team__info {
+    padding-right: 60px;
+    padding-left: 25px;
+    
+    @include breakpoint ($desktop-bp-992) {
+        padding-right: 40px;
+        padding-left: 0;
+     }
+
+     @include breakpoint ($tablets-bp-768) {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding: 0 30px;
+     }
+
+     @include breakpoint ($mobile-bp-576) {
+        padding: 0 15px;
+     }
+}
+
+.team__photo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    @include breakpoint ($tablets-bp-768) {
+        justify-content: center;
+     }
+}
+
+.photo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 375px;
+    border-radius: 100px;
+    overflow: hidden;
+    
+    @include breakpoint ($desktop-bp-992) {
+        width: 280px;
+        height: 280px;
+        border-radius: 70px;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 240px;
+        height: 240px;
+        border-radius: 50px;
+     }
+}
+
+.team__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.team__name {
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    margin-bottom: 35px;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-bottom: 30px;
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-top: 35px;
+        font-size: 18px;
+        margin-bottom: 22px;
+     }
+}
+
+.team__text {
+    p {
+        margin-bottom: 25px;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+       font-size: 18px;
+
+       p {
+        margin-bottom: 20px;
+        }
+     }
+
+    @include breakpoint ($mobile-bp-576) {
+       font-size: 15px;
+     }
+}
+
+.cooperation__link-team {
+    justify-content: start;
+
+    @include breakpoint ($tablets-bp-768) {
+        justify-content: center;
+     }
+}
+
+.cooperation__link-team:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+  }

@@ -1,0 +1,325 @@
+/* general HEADER */
+
+.header__wrapper {
+    @include breakpoint ($tablets-bp-768) {
+        background-color: $white;
+        position: relative;
+        z-index: 8;
+     }
+}
+
+.header{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0; 
+
+    @include breakpoint ($desktop-bp-992) {
+        padding: 35px 0; 
+     }
+
+    @include breakpoint ($tablets-bp-768) {
+        padding: 12px 0; 
+     }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include breakpoint ($tablets-bp-768) {
+        width: auto;
+     }
+}
+
+.header__link {
+     display: flex;
+     align-items: center;
+
+     & .logo {
+        display: block;
+     }
+}
+
+/* Burger button */
+
+.burger__btn {
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.burger__line {
+    display: block;
+    width: 34px;
+    height: 2px;
+    background-color: $black;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    
+    transition: background-color .2s linear;
+
+    &:last-child {
+        margin-bottom: 0;
+    } 
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 28px;
+        margin-bottom: 8px;
+     }
+}
+
+.btn__line1 {
+    position: relative;
+    transform: rotate(0deg);
+    transform-origin: left top ;
+    transition: transform .5s linear;
+
+    &.btn__close1  {
+        transform: rotate(45deg);
+        transform-origin: left top ;
+        transition: transform .5s linear;
+    }
+}
+
+.btn__line3 {
+    position: relative;
+    transform: rotate(0deg);
+    transform-origin: left top ;
+    transition: transform .5s linear;
+    
+    &.btn__close3  {
+        transform: rotate(-45deg);
+        transform-origin: left top ;
+        transition: transform .5s linear;
+    }
+}
+
+.btn__line2 {
+    opacity: 1;
+    transition: transform .5s linear, opacity .7s linear;
+
+    &.btn__close2  {
+        transform: translateX(-40px);
+        transition: transform .5s linear, opacity .7s linear;
+        opacity: 0;
+    }
+}
+
+/* NAV BURGER */
+
+.nav_burger_unlocked {
+    content: "";
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 47%;
+    height: 100%;
+    padding-top: 100px;
+    background: $white;
+   
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 7;
+    
+    transform: translateX(100%);
+    transition: all .5s linear;
+
+   &.nav-show {
+         display: flex;
+   }
+
+   &.nav-transform {
+        transform: translateX(0);
+    }  
+
+   @include breakpoint ($desktop-bp-1200) {
+        width: 50%;
+    }
+
+   @include breakpoint ($desktop-bp-992) {
+    padding-top: 80px;
+    }
+
+   @include breakpoint ($tablets-bp-768) {
+    width: 100%;
+    padding-top: 58px;
+    }
+}
+
+.nav__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    height: 100%;
+    padding: 0 60px 50px 90px;
+    overflow: auto;
+ 
+    @include breakpoint ($desktop-bp-992) {
+        padding: 0 60px 50px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        padding: 0 30px 50px; 
+    }
+}
+
+.nav__list {
+    padding-left: 0;
+    margin:  0 0 25px; 
+}
+
+.nav__item {
+    padding: 8px 0;
+    margin-bottom: 0;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+       border-bottom: 1px solid rgba($placeholder, .2);
+       
+       &:first-child {
+        padding-top: 34px;
+        }
+    } 
+}
+
+.nav__list-main {
+    & .nav__item {
+        padding: 5px 0;
+    }
+}
+
+.nav__link {
+    font-family: 'AvenirNextCyr-Regular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    cursor: pointer;
+
+    transition: font-weight .2s linear, color .2s linear;
+
+    &:hover {
+        font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+        font-weight: 900;
+        color: $redtext; 
+    }
+
+    &:active {
+        color: $buttonactive;
+    }
+
+    @include breakpoint ($desktop-bp-1200) {
+        font-size: 30px;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 20px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 18px;
+    }
+}
+
+// BURGER CONTACTS
+
+.contacts-nav{
+    display: flex;
+    align-items: center;
+
+    @include breakpoint ($desktop-bp-992) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.contacts-nav__btn {
+    font-family: 'AvenirNextCyr-Regular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: $white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 172px;
+    height: 44px;
+    margin-right: 20px;
+    
+    background-color: $colortext;
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: background-color .3s linear;
+
+    &:hover {
+        background-color: $redtext;
+    }
+
+    &:active {
+        background-color: $grayactive;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        display: none;
+     }
+}
+
+.contacts-nav__phone {
+    width: 20px;
+    margin-left: 8px;
+}
+
+.contacts-nav__icon {
+    width: 20px;
+    height: 20px;
+    fill: $colortext;
+    transition: fill .3s linear;
+
+    &:hover {
+        fill: $redtext;
+    }
+
+    &:active {
+        fill: $redactive;
+    }
+}
+
+.nav-icon__phone{
+    stroke: $colortext;
+    stroke-width: .8;
+    margin-left: 12px;
+    transition: all .3s linear;
+    
+    &:hover {
+        stroke: $redtext;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        margin: 25px 0 0 0;
+    }
+}
+
+.nav-icon__youtube {
+    height: 20px;
+    width: 28px;
+    stroke-width: 0;
+    margin-left: 12px;
+    transition: all .3s linear;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin: 25px 0 0 0;
+    }
+}

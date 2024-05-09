@@ -1,0 +1,374 @@
+/* ad-context */
+
+.ad__title {
+    @include breakpoint ($mobile-bp-480) {
+        font-size: 35px;
+       } 
+    @include breakpoint ($mobile-bp-375) {
+        font-size: 28px;
+       } 
+}
+
+.context__content {
+    line-height: 1.4;
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 10px;
+       } 
+}
+
+// .context__content-partner {
+//     display: flex;
+// }
+
+.context__text-partner {
+    margin: 20px 0;
+    // margin-right: 100px;
+    font-weight: bold;
+
+}
+
+.context__googlelogo {
+    max-width: 170px;
+    width: 100%;
+}
+
+.ad-kinds {
+    margin-top: 50px;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-top: 40px;
+       } 
+
+    @include breakpoint ($mobile-bp-576) {
+        margin-top: 30px;
+       } 
+}
+
+.context__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: $redtext;
+    margin-bottom: 20px;
+
+    &-app {
+        margin-bottom: 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 22px;
+       } 
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 20px;
+       } 
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 18px;
+       }  
+}
+
+.ad-kinds__item {
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 18px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+        }
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 15px;
+    }
+}
+
+.ad-kinds__list {
+    padding: 0; 
+
+    & li {
+        margin-bottom: 10px;
+    }
+}
+
+/* ad-context exx */
+.context-exx {
+    padding-top: 60px;
+
+    @include breakpoint ($desktop-bp-992) {
+        padding-bottom: 65px;
+       } 
+
+    @include breakpoint ($tablets-bp-768) {
+        padding-bottom: 50px;
+       } 
+
+    @include breakpoint ($mobile-bp-576) {
+        padding-top: 45px;
+       } 
+}
+
+.context-exx__items {
+    display: flex;
+    align-items: center;
+    
+    @include breakpoint ($tablets-bp-768) {
+        flex-direction: column;
+       } 
+}
+
+.contex-exx__item {
+    width: 50%;
+   
+    &:first-child {
+        margin-right: 12%;
+
+        @include breakpoint ($tablets-bp-768) {
+            margin-right: 0;
+            margin-bottom: 50px;
+           } 
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 100%;
+        padding: 0 150px;
+       } 
+
+    @include breakpoint ($mobile-bp-576) {
+        width: 100%;
+        padding: 0 80px;
+       } 
+
+    @include breakpoint ($mobile-bp-375) {
+        width: 100%;
+        padding: 0 40px;
+       } 
+}
+
+.context__box {
+    padding-top: 100%;
+    position: relative;
+    max-height: 462px; 
+}
+
+.context-exx__circle {
+    background: linear-gradient(to bottom, #E63D1A, #A4ADFF);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.context-exx__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+
+    &-right {
+      min-width: 125%;
+    }
+}
+
+.context-exx__text {
+    text-transform: uppercase;
+    font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+    font-weight: 900;
+    max-width: 290px;
+    text-align: center;
+    margin: 60px auto 0;
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 18px;
+        margin: 50px auto 0;
+       } 
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 15px;
+        margin: 40px auto 0;
+       } 
+}
+
+/* ad-contaxt payment*/
+.context-pay {
+    background-color: $white;
+    line-height: 1.5; 
+    padding-bottom: 20px;
+
+    @include breakpoint ($mobile-bp-576) {
+        padding-bottom: 5px;
+    } 
+
+    & .case-info__subtitle {
+        @include breakpoint ($tablets-bp-768) {
+            text-align: center;
+            font-size: 18px;
+        } 
+       
+        @include breakpoint ($mobile-bp-576) {
+            font-size: 16px;
+        } 
+    }
+}
+
+.context-pay__list {
+    margin: 0;
+    padding: 40px 0 0 25px;
+
+    &-item {
+        margin-bottom: 7px;
+    }
+
+    & span {
+        color: $redtext;
+        font-family: 'AvenirNextCyr-Bold', Arial, sans-serif;
+        font-weight: 900;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+        padding: 30px 0 0 25px;
+    } 
+}
+
+/* ad-Target */
+.target-work {
+    padding: 50px 0 70px;
+
+    @include breakpoint ($desktop-bp-992) {
+       padding: 40px 0 60px;
+     }
+    @include breakpoint ($mobile-bp-576) {
+       padding: 30px 0 45px;
+     }
+}
+
+.target__social {
+    display: flex;
+    margin-bottom: 50px;
+
+    @include breakpoint ($tablets-bp-768) {
+       justify-content: center;
+        margin-bottom: 30px;
+    } 
+}
+
+.target__social-item {
+    background-color: $white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 22px;
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 70px;
+        height: 70px;
+     } 
+
+    @include breakpoint ($mobile-bp-576) {
+        margin: 0 15px;
+     } 
+
+    @include breakpoint ($mobile-bp-375) {
+        margin: 0 10px;
+     } 
+}
+
+.target__social-img {
+    @include breakpoint ($tablets-bp-768) {
+      height: 40px;
+     } 
+}
+
+.target__kinds {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @include breakpoint ($tablets-bp-768) {
+       flex-direction: column;
+       margin-top: 25px;
+      } 
+}
+
+.target__graph {
+    display: block;
+    width: 100%;
+    max-width:400px;
+    height: auto;
+
+    @include breakpoint ($tablets-bp-768) {
+        margin: 0 auto;
+        margin-top: 10px;
+       }
+       
+    @include breakpoint ($mobile-bp-576) {
+        margin-top: 0;
+       } 
+}
+
+.target__item-left {
+    margin-right: 90px;
+
+    @include breakpoint ($tablets-bp-768) {
+        margin-right: 0;
+       } 
+}
+
+.target__text {
+    line-height: 1.5;
+}
+
+.target-work__items {
+    display: flex;
+    align-items: center;
+    
+    @include breakpoint ($desktop-bp-992) {
+        flex-direction: column;
+        font-size: 18px;
+    } 
+
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 15px;
+    } 
+}
+
+.target-work__item{
+    width: 50%;
+}
+
+.target-work__item-left {
+    padding-right: 80px;
+    max-width: 480px;
+
+    @include breakpoint ($desktop-bp-992) {
+        order: 1;
+        padding-right: 0;
+    } 
+}
+
+.target-work__item-right {
+    @include breakpoint ($desktop-bp-992) {
+        width: 100%;
+        margin-bottom: 40px;
+    } 
+
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+    } 
+}
