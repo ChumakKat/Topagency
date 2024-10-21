@@ -1983,6 +1983,11 @@ margin-bottom: 70px;
     height: 85px;
     border-radius: 50%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
    
     @include breakpoint ($mobile-bp-576) {
         width: 75px;
@@ -1998,6 +2003,8 @@ margin-bottom: 70px;
 .reviews__img {
     display: block;
     width: 100%;
+    height: auto;
+    // height: 100%;
 }
 
 .reviews__name {
