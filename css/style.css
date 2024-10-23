@@ -669,6 +669,22 @@ ol, ul {
   }
 }
 
+.nav-icon__behance {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  top: 1px;
+  stroke-width: 0;
+  margin-left: 12px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media screen and (max-width: 992px) {
+  .nav-icon__behance {
+    margin: 25px 0 0 0;
+  }
+}
+
 /* MAIN */
 .main {
   width: 100%;
@@ -1230,6 +1246,24 @@ ol, ul {
 .youtube-icon {
   height: 20px;
   width: 28px;
+  stroke-width: 0;
+  margin-left: 12px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.youtube-icon {
+  height: 20px;
+  width: 28px;
+  stroke-width: 0;
+  margin-left: 12px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.behance-icon {
+  height: 22px;
+  width: 22px;
   stroke-width: 0;
   margin-left: 12px;
   -webkit-transition: all 0.3s linear;
