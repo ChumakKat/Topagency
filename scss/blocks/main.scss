@@ -387,6 +387,7 @@
 
 .main__contacts-link {
     height: 20px;
+    // border: 1px solid red;
 
     @include breakpoint ($tablets-bp-768) {
         display: none;
@@ -411,6 +412,7 @@
 .contacts__link-icon {
     fill: $colortext;
     transition: fill .3s linear;
+    
 }
 
 .main__contacts-icon-wa{
@@ -483,6 +485,22 @@
 .youtube-icon {
     height: 20px;
     width: 28px;
+    stroke-width: 0;
+    margin-left: 12px;
+    transition: all .3s linear;
+}
+
+.youtube-icon {
+    height: 20px;
+    width: 28px;
+    stroke-width: 0;
+    margin-left: 12px;
+    transition: all .3s linear;
+}
+
+.behance-icon {
+    height: 22px;
+    width: 22px;
     stroke-width: 0;
     margin-left: 12px;
     transition: all .3s linear;
